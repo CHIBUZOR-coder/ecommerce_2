@@ -11,6 +11,7 @@ import Women from "./pages/Women.jsx";
 import Children from "./pages/Children.jsx";
 import ProductProvider from "./Context/ProductProvider.jsx";
 import SingleProduct from "./pages/SingleProduct.jsx";
+import Cart from "./pages/Cart.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         element: <SingleProduct />,
         path: "single_product/:id",
+      },
+      {
+        element: <Cart />,
+        path: "cart",
       },
     ],
   },
