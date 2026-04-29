@@ -86,7 +86,7 @@ export default function Cart() {
                         <div className="inline-flex items-center border border-gray-200 rounded-lg overflow-hidden">
                           <button
                             onClick={() =>
-                              HandleUpdateCart(item, item.quantity - 1)
+                              HandleUpdateCart(item, Number(item.quantity - 1))
                             }
                             className="w-7 h-7 bg-gray-50 hover:bg-gray-100 text-gray-600 transition-colors"
                           >
@@ -97,7 +97,7 @@ export default function Cart() {
                           </span>
                           <button
                             onClick={() =>
-                              HandleUpdateCart(item, item.quantity + 1)
+                              HandleUpdateCart(item, Number(item.quantity) + 1)
                             }
                             className="w-7 h-7 bg-gray-50 hover:bg-gray-100 text-gray-600 transition-colors"
                           >
